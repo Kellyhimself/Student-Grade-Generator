@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grade Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#home">SUBJECTS</a></li>
+            <li><a href="#home">CONTACT</a></li>
+            <li><a href="#home">HELP</a></li>                       
+        </ul>
+        <hr>
+    </header>
+    <div id="about">
+        
+        <p>This is a student grade generator</p>
+        <p>As you can see, the below section prompts you to enter your marks and the program will auto calculate your grade</p>
+        <p>Grading ranges from <strong><em>A to E</em></strong></p>
+        <p>You are allowed to input marks <strong>from 0 to 100</strong> </em></p>
+        
+            <div id="inputField">
+                <h2>Come On..</h2>
+                <h1>Lets Do This!</h1>
+                <input id='input' onchange="handleMarksChange()" type="number" placeholder="Enter your marks" />
+                <button onclick="displayGrade()">see grade</button> 
+                <p id="grade"></p>
+            </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
